@@ -1,4 +1,4 @@
-class CabDriver{
+export default class CabDriver{
 
     private driverId:number;
     private driverName:string;
@@ -23,6 +23,3 @@ class CabDriver{
     }
 }
 
-const driver = new CabDriver(101,"Ramesh",1234,4.2,true);
-
-console.log(driver.toString());

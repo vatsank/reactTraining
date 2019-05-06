@@ -48,7 +48,9 @@ console.log(numbers.length);
 
    const electiveMarks = [70,60,80];
    const coreMarks = [90,92,98]
-
+//   for(var i=0;i<coreMarks.length;i++){
+//      electiveMarks.push(coreMarks[i]);
+//   }
    const merge = [electiveMarks,...coreMarks];
 
    console.log(merge);

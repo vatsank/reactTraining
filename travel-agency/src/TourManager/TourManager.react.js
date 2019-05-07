@@ -37,7 +37,10 @@ class TourManager extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className='row'>
+            
+            <div className='col-md-6'>
+            <h1>Popular Packages</h1>
             {
                 this.state.tours.map( (eachTour) =>{
 
@@ -49,15 +52,22 @@ class TourManager extends React.Component {
                  )
                 })
             }
+            </div>
+            <div className='col-md-6'>
+            <h1>Our Sales Executives</h1>
+
             {
-              this.state.agents.map(eachAgent =>{
-
-                return(
-
-                    <Agent name={eachAgent.name} phoneNumber={eachAgent.phoneNumber}></Agent>
-                )
-              })
-            }
+                this.state.agents.map(eachAgent =>{
+  
+                  return(
+  
+                      <Agent name={eachAgent.name} phoneNumber={eachAgent.phoneNumber}></Agent>
+                  )
+                })
+              }
+            </div>
+            
+            
             </div>
             
         )

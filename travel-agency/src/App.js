@@ -15,7 +15,7 @@ function App() {
     <div className="App">
 <Header majHeading={"Leo Travel Agency"} 
             logo={travel}></Header>
-    <Footer action={handleClick}></Footer>
+    <Footer action={handleClick} designer={'Ramesh Infotech'} ></Footer>
       </div>
   );
 }

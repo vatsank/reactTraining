@@ -9,8 +9,9 @@ const Footer = (props) => {
 
         <h6>Designed by {props.designer}</h6>
         <p>{props.copyRight}</p>
+        {props.children}
         <button onClick={props.action}>Mail</button>
-
+ 
         </div>
     );
 

@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header/Header.react';
 import Footer from './Footer/Footer.react';
 import travel from './images/logo.jpg';
+import TourManager from './TourManager/TourManager.react';
 
 const  handleClick = (event) =>{
 
@@ -15,7 +16,13 @@ function App() {
     <div className="App">
 <Header majHeading={"Leo Travel Agency"} 
             logo={travel}></Header>
-    <Footer action={handleClick} designer={'Ramesh Infotech'} ></Footer>
+            <TourManager></TourManager>
+    <Footer action={handleClick} 
+    designer={'Ramesh Infotech'}>
+
+      <p><a href='mailTo:ram@abc.com'>Contact Admin</a></p>
+    
+    </Footer>
       </div>
   );
 }

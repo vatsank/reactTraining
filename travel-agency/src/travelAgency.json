@@ -1,0 +1,15 @@
+{
+    "summerTours": [
+        { "id": 101, "tourName": "Simla", "cost": 25000 },
+        { "id": 102, "tourName": "Ooty", "cost": 5000 },
+        { "id": 103, "tourName": "Munnar", "cost": 15000 },
+        { "id": 104, "tourName": "Pondy", "cost": 3000 }
+
+    ],
+    "agents": [
+        { "id": 201, "name": "Siva", "phoneNumber": 9125010 },
+        { "id": 202, "name": "guna", "phoneNumber": 89010201 }
+
+    ],
+    "employees": []
+}

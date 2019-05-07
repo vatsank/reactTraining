@@ -10,7 +10,7 @@ const MenuBar = (props) => {
 
  {
    props.linkItems.map((item,idx) =>{
-      return  <li key={idx}>{item}</li>
+      return  <li key={idx}><a href={item}>{item}</a></li>
    })  
  }
 </ul>

@@ -26,94 +26,14 @@
       "cost": "14000"
     },
     {
-      "id": "108",
-      "tourName": "jammu",
-      "cost": "34"
+      "id": "105",
+      "tourName": "Tirupathi",
+      "cost": "4400"
     },
     {
-      "id": "110",
-      "tourName": "mahab",
-      "cost": "34"
-    },
-    {
-      "id": "455",
-      "tourName": "dfdfd",
-      "cost": "33"
-    },
-    {
-      "id": "44",
-      "tourName": "dsdfs",
-      "cost": "2323"
-    },
-    {
-      "id": "344",
-      "tourName": "dsdfds",
-      "cost": "333"
-    },
-    {
-      "id": "3434",
-      "tourName": "dfsdf",
-      "cost": "4444"
-    },
-    {
-      "id": "0555",
-      "tourName": "cbvcbvcb",
-      "cost": "788"
-    },
-    {
-      "id": "999",
-      "tourName": "22ddfd",
-      "cost": "ddfd"
-    },
-    {
-      "id": "666",
-      "tourName": "ddd",
-      "cost": "66"
-    },
-    {
-      "id": "8999",
-      "tourName": "jjjdjdj",
-      "cost": "45"
-    },
-    {
-      "id": "45",
-      "tourName": "kk",
-      "cost": "566"
-    },
-    {
-      "id": "4555",
-      "tourName": "kkggg",
-      "cost": "56688"
-    },
-    {
-      "id": "444230",
-      "tourName": "sdfsdfd",
-      "cost": "66"
-    },
-    {
-      "id": "44423044",
-      "tourName": "sdfsdfd444",
-      "cost": "6666"
-    },
-    {
-      "id": "884858",
-      "tourName": "Pune",
-      "cost": "5858"
-    },
-    {
-      "id": "84848",
-      "tourName": "Tirumala",
-      "cost": "44"
-    },
-    {
-      "id": "999343",
-      "tourName": "shirdi",
-      "cost": "899"
-    },
-    {
-      "id": "89990",
-      "tourName": "vellore",
-      "cost": "788"
+      "id": "107",
+      "tourName": "Coorg",
+      "cost": "5600"
     }
   ],
   "agents": [

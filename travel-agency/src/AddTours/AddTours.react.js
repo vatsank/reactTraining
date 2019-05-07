@@ -59,18 +59,35 @@ class AddTours extends React.Component {
 
     render() {
         return (
-            <div className='col-md-6'>
+            <div className="container">
+              <div className='row'>
+              <div className='col-md-6'>
 
-            <div>
-            {
-                this.state.tours.map(eachtour =>{
-                    return(
-                        <li key={eachtour.id}>{eachtour.tourName}</li>
-                    )
-                })
-            }
-            </div>
-            <form onSubmit={this.handleSubmit}>
+                          <table className='table table-bordered'>
+                  <tr>
+                   <th>Id</th>
+                   <th>Tour Name</th>
+                   <th>Cost</th>
+                   
+                  </tr>
+                  {
+                  this.state.tours.map(eachtour =>{
+                      return(
+                          <tr key={eachtour.id}>
+                          <td>{eachtour.id}</td>
+                          <td>{eachtour.tourName}</td>
+                          <td>{eachtour.cost}</td>
+                          </tr>
+                      )
+                  })
+                 
+              }
+              </table>
+  
+              </div>
+         
+              <div className='col-md-6'>
+              <form onSubmit={this.handleSubmit}>
                 <div className='form-group'>
                    <label htmlFor="id">Id</label>
                     <input type="text" name='id' 
@@ -91,6 +108,10 @@ class AddTours extends React.Component {
                 <div className='formGroup'>
                       <input type="submit" value='Add' className='button button-primary'/></div>
             </form>
+
+              </div>
+            </div>
+              
             </div>
         );
     }

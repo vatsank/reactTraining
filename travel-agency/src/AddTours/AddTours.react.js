@@ -38,6 +38,10 @@ class AddTours extends React.Component {
            body:JSON.stringify(this.state.newTour),
            headers:{'Content-Type':'application/json'}
        }).then(resp=>resp.json()).then(resp => {
+
+        const {tours} = this.state;
+        tours.push(resp);
+        this.setState({tours});
          console.log(resp);
     });
 

@@ -1,17 +1,60 @@
 {
-    "summerTours": [
-        { "id": 101, "tourName": "Simla", "cost": 25000 },
-        { "id": 102, "tourName": "Ooty", "cost": 5000 },
-        { "id": 103, "tourName": "Munnar", "cost": 15000 },
-        { "id": 104, "tourName": "Pondy", "cost": 3000 }
-
+    "summerTours": [{
+            "id": 101,
+            "tourName": "Simla",
+            "cost": 25000
+        },
+        {
+            "id": 102,
+            "tourName": "Ooty",
+            "cost": 5000
+        },
+        {
+            "id": 103,
+            "tourName": "Munnar",
+            "cost": 15000
+        },
+        {
+            "id": 104,
+            "tourName": "Pondy",
+            "cost": 3000
+        },
+        {
+            "id": "105",
+            "tourName": "Nainital",
+            "cost": "14000"
+        },
+        {
+            "id": "108",
+            "tourName": "jammu",
+            "cost": "34"
+        },
+        {
+            "id": "110",
+            "tourName": "mahab",
+            "cost": "34"
+        }
     ],
-    "agents": [
-        { "id": 201, "name": "Siva", "phoneNumber": 9125010 },
-        { "id": 202, "name": "Guna", "phoneNumber": 89010201 },
-        { "id": 203, "name": "Giri", "phoneNumber": 79010201 },
-        { "id": 204, "name": "Vivek", "phoneNumber": 69010201 }
-
+    "agents": [{
+            "id": 201,
+            "name": "Siva",
+            "phoneNumber": 9125010
+        },
+        {
+            "id": 202,
+            "name": "Guna",
+            "phoneNumber": 89010201
+        },
+        {
+            "id": 203,
+            "name": "Giri",
+            "phoneNumber": 79010201
+        },
+        {
+            "id": 204,
+            "name": "Vivek",
+            "phoneNumber": 69010201
+        }
     ],
     "employees": []
 }

@@ -39,10 +39,13 @@ class AddTours extends React.Component {
            headers:{'Content-Type':'application/json'}
        }).then(resp=>resp.json()).then(resp => {
 
-        const {tours} = this.state;
+        // using  es6 destructure
+        // const {tours} = this.state;
+        // using es5 
+          const tours = this.state.tours;
         tours.push(resp);
         this.setState({tours});
-         console.log(resp);
+       
     });
 
     }
@@ -64,15 +67,19 @@ class AddTours extends React.Component {
               <div className='col-md-6'>
 
                           <table className='table table-bordered'>
+                          <thead>
                   <tr>
                    <th>Id</th>
                    <th>Tour Name</th>
                    <th>Cost</th>
                    
                   </tr>
+                  </thead>
+                  <tbody>
                   {
                   this.state.tours.map(eachtour =>{
                       return(
+
                           <tr key={eachtour.id}>
                           <td>{eachtour.id}</td>
                           <td>{eachtour.tourName}</td>
@@ -82,6 +89,7 @@ class AddTours extends React.Component {
                   })
                  
               }
+              </tbody>
               </table>
   
               </div>
@@ -89,24 +97,24 @@ class AddTours extends React.Component {
               <div className='col-md-6'>
               <form onSubmit={this.handleSubmit}>
                 <div className='form-group'>
-                   <label htmlFor="id">Id</label>
+                   <label htmlFor="id" className='label label-info'>Id</label>
                     <input type="text" name='id' 
                     value={this.state.newTour.id} 
                       onChange={this.handleChange} 
                       className='form-control'/>
                 </div>
                 <div className='formGroup'>
-                   <label htmlFor="tourName">Tour Name</label>
+                   <label htmlFor="tourName" className='label label-default'>Tour Name</label>
                    <input type="text" name='tourName' value={this.state.newTour.tourName}
                     onChange={this.handleChange} className='form-control'/>
                  </div>
                 <div className='formGroup'>
-                    <label htmlFor="cost">Cost</label>
+                    <label htmlFor="cost" className='label label-info'>Cost</label>
                     <input type="text" name='cost' value={this.state.newTour.cost} 
                     onChange={this.handleChange} className='form-control'/>
                  </div>
                 <div className='formGroup'>
-                      <input type="submit" value='Add' className='button button-primary'/></div>
+                      <input type="submit" value='Add' className='btn btn-primary'/></div>
             </form>
 
               </div>

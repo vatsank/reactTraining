@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 
 
 const MenuBar = (props) => {
@@ -10,7 +10,7 @@ const MenuBar = (props) => {
 
  {
    props.linkItems.map((item,idx) =>{
-      return  <li key={idx}><a href={item}>{item}</a></li>
+      return  <li key={idx}><Link to={item}>{item}</Link></li>
    })  
  }
 </ul>

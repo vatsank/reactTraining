@@ -22,10 +22,8 @@ class TourManager extends React.Component {
 
         urls.map( (url,idx) => {
 
-            fetch(url).
-          then(resp => resp.json()).
-           then(data => {
-               if(idx ==0){
+            fetch(url).then(resp => resp.json()).then(data => {
+               if(idx ===0){
              this.setState({tours:data})}
              else {
                  this.setState({agents:data})
@@ -45,7 +43,7 @@ class TourManager extends React.Component {
                 this.state.tours.map( (eachTour) =>{
 
                  return (  
-                     <Tour id={eachTour.id} key={eachTour.id} 
+                     <Tour key={eachTour.id} 
                           tourName={eachTour.tourName} 
                            cost ={eachTour.cost}>
                      </Tour>
@@ -61,7 +59,7 @@ class TourManager extends React.Component {
   
                   return(
   
-                      <Agent name={eachAgent.name} phoneNumber={eachAgent.phoneNumber}></Agent>
+                      <Agent key={eachAgent.id} name={eachAgent.name} phoneNumber={eachAgent.phoneNumber}></Agent>
                   )
                 })
               }

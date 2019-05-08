@@ -26,7 +26,7 @@
       "cost": "14000"
     },
     {
-      "id": "105",
+      "id": "106",
       "tourName": "Tirupathi",
       "cost": "4400"
     },
@@ -34,6 +34,16 @@
       "id": "107",
       "tourName": "Coorg",
       "cost": "5600"
+    },
+    {
+      "id": "108",
+      "tourName": "Shirdi",
+      "cost": "6800"
+    },
+    {
+      "id": "109",
+      "tourName": "Mahab",
+      "cost": "600"
     }
   ],
   "agents": [

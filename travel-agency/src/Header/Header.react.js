@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuBar from '../MenuBar/MenuBar.react';
 
-const links = ['Home','History','Contact'];
+const links = ['Home','packages','tours'];
 const Header = (props) => {
 
     return (

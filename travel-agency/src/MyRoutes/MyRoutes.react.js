@@ -5,7 +5,6 @@ import AddTours from '../AddTours/AddTours.react';
 import TourManager from '../TourManager/TourManager.react';
 
 const MyRoutes = () => {
-
     return (
         <div >
 

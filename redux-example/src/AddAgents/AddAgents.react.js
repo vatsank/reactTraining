@@ -1,19 +1,18 @@
 import React from 'react';
 
 import {Field,reduxForm} from 'redux-form';
-import validate from '../validate/validate.react';
-
+import myvalidator from '../validate/validate.react';
+import {} from 'redux-form'
 export const renderField = 
  ({ input, label, type, meta: { touched, error, warning } }) =>{
 
     return(
     <div>
         <label>{label}</label>
-      <input {...input} type={type} placeholder={label}/>
+      <input {...input} type={type}/>
 
       {touched && ((error && 
-     <span className="text-danger">{error}</span>) || 
-       (warning && <span>{warning}</span>))}
+     <span className="text-danger">{error}</span>) )}
 
        </div>
     )
@@ -48,7 +47,7 @@ export const AddAgents = (props) => {
 
  export default reduxForm({
      form:'addAgentForm',
-     validate
+     validate:myvalidator
  })(AddAgents);
 
  

@@ -28,7 +28,7 @@ class ShowAgents extends React.Component {
 
 const mapStateToProps = (state ) => {
 
-    console.log(state);
+    
     return {
         
         agentList: state.agentList

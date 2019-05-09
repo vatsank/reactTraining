@@ -10,11 +10,12 @@ const url = 'http://localhost:4000/agents';
 
 // Action Creator
 
-const fetchAgents = (agentList)=>{
+const fetchAgents = (agentList,loading)=>{
 
     return{
         type:'FETCH_AGENTS',
-        agentList
+        agentList,
+        loading:false
     }
 
 }
@@ -26,6 +27,7 @@ const agentReducer = (initalState={agentList:[{id:101,name:'ram',phone:45050}]},
 
     switch (action.type) {
         case 'FETCH_AGENTS':
+        console.log(action);
             return {...initalState,...action};
          default:
             return initalState;
@@ -38,7 +40,7 @@ export  function getAllAgents(){
     return function(dispatch){
 
         return axios.get(url).then(resp =>{
-            dispatch(fetchAgents(resp.data));
+            dispatch(fetchAgents(resp.data,true));
         });
     }
  }

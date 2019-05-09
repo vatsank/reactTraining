@@ -4,9 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux';
-import restStore from './restStore';
 
-ReactDOM.render(<Provider store={restStore}><App /></Provider>, document.getElementById('root'));
+import formstore from './formstore'
+
+ReactDOM.render(<Provider store={formstore}><App /></Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

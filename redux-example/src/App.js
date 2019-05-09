@@ -5,7 +5,8 @@ import AddAgents  from './AddAgents/AddAgents.react';
 import ShowAgents from './ShowAgents/ShowAgents.react';
 import PromiseAgent from './PromiseAgent/PromiseAgent.react';
 import axios from 'axios';
-
+import MyProvider from './MyProvider/MyProvider.react';
+import MyConsumer from './MyConsumer/MyConsumer.react';
 
 
 function App() {
@@ -29,8 +30,11 @@ function App() {
    {/*<ShowAgents></ShowAgents>*/}
    {/* <PromiseAgent></PromiseAgent> */}
    <p>{status}</p>
-   <AddAgents onSubmit={showResults}></AddAgents>
+{/*    <AddAgents onSubmit={showResults}></AddAgents> */}
   
+   <MyProvider>
+    <MyConsumer></MyConsumer>
+   </MyProvider>
      </div>
   );
 }

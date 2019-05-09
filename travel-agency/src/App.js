@@ -7,7 +7,9 @@ import travel from './images/logo.jpg';
 import TourManager from './TourManager/TourManager.react';
 import AddTours from './AddTours/AddTours.react';
 import MyRoutes from './MyRoutes/MyRoutes.react';
+import MyProvider from './MyProvider/MyProvider.react';
 
+import Middle from './Middle/Middle.react';
 const  handleClick = (event) =>{
 
   console.log(event)
@@ -19,6 +21,9 @@ function App() {
 <Header majHeading={"Leo Travel Agency"} 
             logo={travel}></Header>
           <MyRoutes></MyRoutes>
+          <MyProvider>
+           <Middle></Middle>
+          </MyProvider>
     <Footer action={handleClick} 
     designer={'Ramesh Infotech'}>
 

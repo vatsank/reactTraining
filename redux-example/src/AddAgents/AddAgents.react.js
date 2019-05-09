@@ -1,7 +1,24 @@
 import React from 'react';
 
 import {Field,reduxForm} from 'redux-form';
+import validate from '../validate/validate.react';
 
+export const renderField = 
+ ({ input, label, type, meta: { touched, error, warning } }) =>{
+
+    return(
+    <div>
+        <label>{label}</label>
+      <input {...input} type={type} placeholder={label}/>
+
+      {touched && ((error && 
+     <span className="text-danger">{error}</span>) || 
+       (warning && <span>{warning}</span>))}
+
+       </div>
+    )
+    
+}
 export const AddAgents = (props) => {
 
     console.log(props);
@@ -12,14 +29,11 @@ export const AddAgents = (props) => {
 
         <form onSubmit={handleSubmit}>
         
-        <label>ID</label>
-         <Field component='input' type='text' name='id'></Field>
+         <Field component={renderField} type='text' name='id' label='Id'></Field>
       
-        <label>Name</label>
-        <Field component='input' type='text' name='name'></Field>
+        <Field component={renderField} type='text' name='name' label="UserName"></Field>
 
-        <label>PhoneNumber</label>
-        <Field component='input' type='text' name='phoneNumber'></Field>
+        <Field component={renderField} type='text' name='phoneNumber' label='Phone Number'></Field>
 
         <button type='submit'>Submit</button>
         
@@ -33,7 +47,8 @@ export const AddAgents = (props) => {
 // to expose the props and action from redux-form
 
  export default reduxForm({
-     form:'addAgentForm'
+     form:'addAgentForm',
+     validate
  })(AddAgents);
 
  

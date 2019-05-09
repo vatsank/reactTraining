@@ -4,6 +4,7 @@ import {Field,reduxForm} from 'redux-form';
 
 export const AddAgents = (props) => {
 
+    console.log(props);
     const {handleSubmit} = props;
    
     return (
@@ -35,3 +36,4 @@ export const AddAgents = (props) => {
      form:'addAgentForm'
  })(AddAgents);
 
+ 
